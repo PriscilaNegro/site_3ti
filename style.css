@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*acima remove margens e paddings padrões*/
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: transparent;
+    color: white;
+    padding: 20px 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/*container centralizado*/
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1{
+    font-size: 24px;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+nav a:hover {
+  font-size: 1.1em; 
+  transition: font-size 0.2s ease;
+}
+
+.hero {
+  background-image: url('img/BannerPrincipal.jpg'); 
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding: 150px 20px 100px;
+  width: 100%;
+ 
+}
+
+.hero-content {
+  max-width: none;
+  margin: 0;
+  padding-left: 50px;
+  text-align: left;
+}
+
+.hero h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.btn {
+  background-color: #00bfff;
+  color: white;
+  padding: 12px 25px;
+  border: none;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #0099cc;
+}
+
+
+
+
+
+
+
+
