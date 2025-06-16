@@ -18,9 +18,14 @@ header{
     color: white;
     padding: 20px 0;
     z-index: 1000;
+  }
+  
+header .container{
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
+    gap: 60px;
+    padding: 0 40px;
 }
 
 /*container centralizado*/
@@ -40,7 +45,7 @@ header h1{
 nav ul{
     list-style: none;
     display: flex;
-    gap: 20px;
+    gap: 50px;
 }
 
 nav a{
@@ -64,14 +69,14 @@ nav a:hover {
 }
 
 .hero-content {
-  max-width: none;
-  margin: 0;
+  max-width: 700px;
+  margin: 100px;
   padding-left: 50px;
   text-align: left;
 }
 
 .hero h2 {
-  font-size: 36px;
+  font-size: 50px;
   margin-bottom: 20px;
 }
 
