@@ -30,12 +30,10 @@ header .container{
 
 /*container centralizado*/
 .container {
-    width: 90%;
-    max-width: 1200px;
+    width: 100%;
+    max-width: 1400px;
     margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+   padding: 0 20px;
 }
 
 header h1{
@@ -100,10 +98,76 @@ nav a:hover {
   background-color: #0099cc;
 }
 
+.produtos {
+  padding: 80px 20px 100px;
+  background-color: #f5f5f5;
+}
 
+.produtos-titulo {
+  text-align: center;
+  margin-bottom: 40px;
+}
 
+.produtos-titulo h2 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
 
+.produtos-titulo p {
+  font-size: 18px;
+  color: #333;
+}
 
+.produtos h2 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
 
+.produtos p {
+  font-size: 18px;
+  margin-bottom: 40px;
+  color: #333;
+}
 
+.produtos-cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
 
+.card {
+  background-color: #fff;
+  padding: 20px;
+  flex: 1 1 250px;
+  max-width: 300px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+  text-align: center;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+.card p {
+  color: #666;
+  font-size: 16px;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+.card h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.card p {
+  color: #666;
+  font-size: 16px;
+}
