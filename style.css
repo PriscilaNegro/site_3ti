@@ -208,3 +208,24 @@ nav a:hover {
   line-height: 1.4;
   color: rgba(255, 255, 255, 0.9);
 }
+
+.duvida {
+  background-color: #0077c8;
+  color: white;
+  padding: 40px 0;
+  width: 100%;
+}
+.duvida-conteudo {
+  width: 400px; 
+  margin: 0 auto 0 50px;
+}
+.duvida h2 {
+  margin: 0;
+  font-size: 32px;
+}
+
+.duvida p {
+  margin: 10px 0 20px;
+  font-weight: bold;
+  color: white;
+}
