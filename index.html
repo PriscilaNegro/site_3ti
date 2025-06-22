@@ -3,13 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
     <title>3TI Softwares</title>
+    <link rel="icon" href="img/logoAzul.png" sizes="16x16" type="image/png">
+
 </head>
 <body>
     <header>
         <div class="container">
-            <h1>3TI</h1>
+            <a href="index.html" class="logo">
+              <img src="img/logo.png" alt="logoWhite 3TI" class="logo-white">
+              <img src="img/logoAzul.png" alt="logoAzul 3TI" class="logo-blue" style="display: none;">
+             </a>
             <nav>
                 <ul>
                     <li><a href="#">Home</a></li>                    
@@ -20,6 +26,7 @@
             </nav>
         </div>
     </header>
+
     <section class="hero">
         <div class="hero-content">
             <h2>Soluções pensadas especialmente para sua empresa</h2>
@@ -30,7 +37,7 @@
     </section>
 
     <section class="produtos">
-     <div class=" container produtos-titulo">
+     <div class= "container produtos-titulo">
       <h2>Produtos 3TI</h2>
       <p>Conheça as soluções desenvolvidas para otimizar o seu negócio.</p>
      </div>
@@ -50,14 +57,14 @@
 
         <div class="card">
           <img src="img/PlatinumFastFood.jpg" alt="PlatinumFastFood">
-         <h3>Platinum Fast Food</h3>
-         <p>....</p>
+            <h3>Platinum Fast Food</h3>
+             <p>Gestão Gastronomica</p>
         </div>
 
         <div class="card">
          <img src="img/PlatinumB2B.jpg" alt="PlatinumB2B">
-         <h3>Platinum B2B</h3>
-         <p>Inteligência de Negócios</p>
+          <h3>Platinum B2B</h3>
+           <p>Inteligência de Negócios</p>
          </div>
         </div>
     </section>
@@ -73,10 +80,10 @@
     </section>
 
      <section class="duvida">
-         <div class="duvida-conteudo">
-            <div class="duvida-texto">
-                <h2>ALGUMA DÚVIDA?</h2>
-                <p>Entre em contato agora!</p>
+      <div class="duvida-conteudo">
+        <div class="duvida-texto">
+           <h2>ALGUMA DÚVIDA?</h2>
+            <p>Entre em contato agora!</p>
          </div>
 
             <div class="duvida-icone">
@@ -86,16 +93,16 @@
      </section>
 
      <section class="depoimentos">
-  <div class="depoimentos-overlay">
-    <div class="container">
-      <h2 class="depoimentos-titulo">Depoimentos</h2>
-      <div class="depoimentos-grid">
+       <div class="depoimentos-overlay">
+         <div class="container">
+         <h2 class="depoimentos-titulo">Depoimentos</h2>
+          <div class="depoimentos-grid">
 
-        <div class="depoimento">
-          <p class="comentario">“O suporte é muito atencioso. Sempre que precisamos, somos atendidos com agilidade.”</p>
-          <div class="perfil">
-            <img src="img/Perfil.png" alt="Usuário 1">
-            <div>
+           <div class="depoimento">
+            <p class="comentario">“O suporte é muito atencioso. Sempre que precisamos, somos atendidos com agilidade.”</p>
+              <div class="perfil">
+                <img src="img/Perfil.png" alt="Usuário 1">
+              <div>
               <strong>Eliane Bosquetto</strong><br>
               <span>Proprietária Marcelinho Auto Vidros</span>
             </div>
@@ -104,32 +111,70 @@
 
         <div class="depoimento">
           <p class="comentario">“O suporte é muito atencioso. Sempre que precisamos, somos atendidos com agilidade.”</p>
-          <div class="perfil">
-            <img src="img/Perfil.png" alt="Usuário 1">
-            <div>
-              <strong>Eliane Bosquetto</strong><br>
-              <span>Proprietária Marcelinho Auto Vidros</span>
+            <div class="perfil">
+              <img src="img/Perfil.png" alt="Usuário 1">
+                <div>
+                <strong>Eliane Bosquetto</strong><br>
+                <span>Proprietária Marcelinho Auto Vidros</span>
+                </div>
             </div>
-          </div>
         </div>
 
         <div class="depoimento">
           <p class="comentario">“O suporte é muito atencioso. Sempre que precisamos, somos atendidos com agilidade.”</p>
           <div class="perfil">
             <img src="img/Perfil.png" alt="Usuário 1">
-            <div>
+              <div>
               <strong>Eliane Bosquetto</strong><br>
               <span>Proprietária Marcelinho Auto Vidros</span>
+             </div>
             </div>
           </div>
+       </div>
+     </div>
+    </section>
+
+    <section class="clientes">
+      <div class="clientes-container">
+        <h2 class="depoimentos-titulo">Clientes</h2>
+        <div class="logos-clientes">
+          <img src="img/AGP.jpg" alt="Logo AGP">
+          <img src="img/Brilhoso.jpg" alt="Logo Brilhoso">
+          <img src="img/Marcelinho.jpg" alt="Logo Marcelinho">
+          <img src="img/Taise.png" alt="Logo Taise">
+          <img src="img/Tayrona.jpg" alt="Logo Tayrona">
         </div>
-
-
       </div>
+    </section>
+
+  <section class="nosso-endereco">
+    <h2>Nosso Endereço</h2>
+    <div id="map"></div>
+  </section>
+
+<script
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDVm1lJFm_ezzc9-JVXwqyhPw7-uGIqblw&callback=initMap"
+  async
+  defer
+></script>
+ 
+<section class="social">
+  <div class="social-container">
+    <img src="img/logo.png" alt="Logo da 3TI" class="social-logo">
+
+    <div class="social-icons">
+      <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+      <a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+      <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+      <a href="#" aria-label="Telefone"><i class="fas fa-phone-alt"></i></a>
     </div>
   </div>
 </section>
 
+<footer class="footer">
+  <p>&copy; <span id="ano-atual"></span> <strong>3TI Softwares</strong>. Todos os direitos reservados.</p>
+</footer>
 
+<script src="script.js"></script>
 </body>
 </html>
