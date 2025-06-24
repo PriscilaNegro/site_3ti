@@ -225,6 +225,15 @@ nav a:hover {
   font-size: 16px;
 }
 
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: rgba(0, 0, 0, 0.5); 
+  border-radius: 50%;                 
+  width: 40px;
+  height: 40px;
+}
+
+
 .banner {
   background-image: url('img/empresa.jpg'); 
   background-size: cover;
