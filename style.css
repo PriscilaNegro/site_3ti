@@ -124,32 +124,61 @@ nav a:hover {
   margin-bottom: 30px;
 }
 
-.btn {
-  background-color:#1e82c4; 
+.btn-custom {
+  background-color: #1e82c4;
   color: white;
-  padding: 12px 25px;
-  border: none;
+  padding: 12px 30px;
+  border: 2px solid white;
+  border-radius: 50px;
+  font-weight: 600;
+  font-size: 16px;
   text-decoration: none;
-  border-radius: 5px;
-  font-weight: bold;
-  transition: background-color 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  display: inline-block;
 }
 
-.btn:hover {
-  background-color:#0077c8;
+.btn-custom:hover {
+  background-color: white;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.15);
+  color: #1e82c4;
 }
 
 .whatsapp-link {
-  color: #25D366;
-  font-size: 32px;
-  margin-left: 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: white;
   text-decoration: none;
+  font-size: 16px;
+  font-family: Arial, sans-serif;
+  transition: transform 0.3s ease;
 }
 
 .whatsapp-link:hover {
-  color: #128C7E;
+  transform: scale(1.1);
 }
 
+.whatsapp-link i {
+  font-size: 1.5em;
+}
+
+.whatsapp-info {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.1;
+}
+
+.whatsapp-info .numero {
+  font-size: 1em;
+  font-weight: bold;
+  color: inherit;
+}
+
+.whatsapp-info .descricao {
+  font-size: 0.85em;
+  color: inherit;
+}
 
 .produtos {
   padding: 40px 20px 60px;
