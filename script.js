@@ -11,6 +11,15 @@ window.addEventListener('load', toggleHeaderScrolled);
 
 window.addEventListener('scroll', toggleHeaderScrolled);
 
+document.addEventListener("DOMContentLoaded", function () {
+  var images = document.querySelectorAll('.parallax-img');
+  new simpleParallax(images, {
+    scale: 1.3,
+    delay: 0.6,
+    transition: 'cubic-bezier(0,0,0,1)'
+  });
+});
+
 function initMap() {
   const localEmpresa = { lat: -21.787874, lng: -48.175622 }; 
   const map = new google.maps.Map(document.getElementById("map"), {
