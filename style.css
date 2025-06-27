@@ -272,7 +272,7 @@ section{
   position: relative;
   height: 500px;
   overflow: hidden;
-  margin-top: 80px; 
+  
 }
 
 .parallax-img {
@@ -316,14 +316,13 @@ section{
   color: rgba(255, 255, 255, 0.9);
 }
 
-
 .duvida {
   background-color: #0077c8;
   color: white;
   padding: 5px 0;
-  width: 100%;
-  
+  width: 100%; 
 }
+
 .duvida-conteudo {
   max-width: 1200px;
   margin: 0 auto;
@@ -364,7 +363,7 @@ section{
 
 .depoimentos {
   position: relative;
-  padding: 20px;
+  padding: 0;
   background-color: #f5f5f5;
 }
 
@@ -400,14 +399,14 @@ section{
 }
 
 .depoimento {
-   background-image: url('img/depoimento0.png');
+  background-image: url('img/depoimento0.png');
   background-size: contain;
   background-position: top left;
   background-repeat: no-repeat;
   background-color: transparent; 
   border-radius: 0;
   padding: 33px;
-  max-width: 350px;
+  max-width: 280px;
   flex: 1 1 300px;
   box-shadow: none;
   color: #333;
@@ -425,6 +424,9 @@ section{
   display: flex;
   align-items: center;
   gap: 15px;
+  padding: 8px 12px;
+  border-radius: 30px;
+  margin-top: 30px;
 }
 
 .perfil img {
@@ -487,6 +489,7 @@ section{
   position: relative;
   padding-bottom: 15px;
   margin-bottom: 30px;
+  margin-top: 40px;
 }
 
 .nosso-endereco h2::after {
