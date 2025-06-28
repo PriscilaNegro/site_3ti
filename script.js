@@ -35,3 +35,10 @@ function initMap() {
 }
 
 document.getElementById("ano-atual").textContent = new Date().getFullYear();
+
+const menuToggle = document.querySelector(".menu-toggle");
+const navList = document.querySelector("nav ul");
+
+menuToggle.addEventListener("click", () => {
+  navList.classList.toggle("active");
+});

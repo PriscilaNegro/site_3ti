@@ -186,6 +186,10 @@ section{
   color: inherit;
 }
 
+.menu-toggle {
+  display: none; 
+}
+
 .produtos {
   padding: 40px 20px 60px;
   background-color: #f5f5f5;
@@ -539,13 +543,13 @@ section{
 
 .social-icons a {
   font-size: 24px;
-  color: #0077c8;
+  color: white;
   transition: transform 0.3s, color 0.3s;
 }
 
 .social-icons a:hover {
   transform: scale(1.2);
-  color: #005f9e;
+  color: white;
 }
 
 .footer {
@@ -554,4 +558,143 @@ section{
   text-align: center;
   padding: 15px 10px;
   font-size: 14px;
+}
+
+/* Ajuste na versão mobile */
+
+@media (max-width: 768px) {
+
+  header .container {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    padding: 0 20px;
+  }
+
+  .menu-toggle {
+    display: block;
+    cursor: pointer;
+    font-size: 26px;
+    color: white;
+    z-index: 1002;
+  }
+
+  nav ul {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 80px;
+    right: 20px;
+    background-color:white !important;
+    color: #0077c8 !important;
+    padding: 20px;
+    border-radius: 8px;
+    z-index: 1001;
+    width: 200px;
+  }
+
+  nav ul.active {
+    display: flex;
+  }
+
+  nav ul li {
+    margin: 10px 0;
+  }
+
+  nav ul li a {
+  color: #0077c8 !important;
+  text-decoration: none;
+}
+
+nav ul.active {
+  background-color: white !important;
+  color: #0077c8 !important;
+}
+
+header.scrolled nav ul.active {
+  background-color: rgba(0, 119, 200, 0.95) !important; /* azul */
+  color: white !important;
+}
+
+header.scrolled nav ul.active li a {
+  color: white !important;
+}
+
+
+  .whatsapp-link {
+    display: none;
+  }
+
+  .hero {
+  background-image: url('img/BannerPrincipal.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 100px 20px 40px;
+  color: white;
+  min-height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 330px;
+}
+
+  .hero-content {
+  padding: 0 10px;
+  margin: 0 auto;
+  max-width: 90%;
+}
+
+.hero h2 {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 14px;
+  line-height: 1.4;
+  margin-bottom: 20px;
+}
+
+.btn-custom {
+  font-size: 13px;
+  padding: 10px 22px;
+}
+
+header .menu-toggle {
+  color: white;
+  font-size: 24px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  z-index: 1100;
+}
+
+header.scrolled .menu-toggle {
+  color: #0077c8; 
+}
+
+
+  .duvida-conteudo {
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+    padding: 20px;
+  }
+
+  .duvida-texto {
+    align-items: center;
+  }
+
+  .duvida-icone img {
+    width: 100px;
+  }
+
+  /* Redução logos clientes */
+  .logos-clientes img {
+    width: 90px;
+    height: 90px;
+  }
 }
