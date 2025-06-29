@@ -143,6 +143,9 @@ section{
   transition: background-color 0.3s ease, box-shadow 0.3s ease;
   display: inline-block;
 }
+.btn-custom i {
+  margin-right: 8px;
+}
 
 .btn-custom:hover {
   background-color: white;
@@ -264,6 +267,94 @@ section{
   font-size: 16px;
 }
 
+.segmentos-3ti {
+  max-width: 1200px;
+  margin: 0 auto 60px auto;
+  padding: 20px;
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+.segmentos-3ti h2 {
+  font-weight: 700;
+  font-size: 32px;
+  margin-bottom: 10px;
+  color: #000; 
+}
+
+.barra-abaixo-titulo {
+  width: 60px;
+  height: 5px;
+  background-color: #0d6dbf;
+  margin: 0 auto 40px auto;
+  border-radius: 3px;
+}
+
+.cards-segmentos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.card {
+  flex: 1 1 200px;
+  max-width: 250px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 25px 15px;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.card .icone {
+  font-size: 38px;
+  color: #0d6dbf;
+  margin-bottom: 15px;
+}
+
+.card h3 {
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 13px;
+  color: #777;
+  line-height: 1.3em;
+}
+
+.card.destaque {
+  background-color: #0d6dbf;
+  color: #fff;
+  border-color: #0d6dbf;
+}
+
+.card.destaque .icone {
+  color: #fff;
+}
+
+.card.destaque p {
+  font-weight: 700;
+  color: #fff;
+}
+
+.card:hover {
+  background-color: #0d6dbf;
+  color: #fff;
+  border-color: #0d6dbf;
+}
+
+.card:hover .icone {
+  color: #fff;
+}
+
+.card:hover p {
+  color: #fff;
+  font-weight: 600;
+}
+
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
   background-color: rgba(0, 0, 0, 0.5); 
@@ -276,7 +367,6 @@ section{
   position: relative;
   height: 500px;
   overflow: hidden;
-  
 }
 
 .parallax-img {
@@ -311,13 +401,13 @@ section{
   font-size: 48px;
   font-weight: bold;
   margin-bottom: 10px;
-  color: rgba(255, 255, 255, 0.9);
+  color: rgba(255, 255, 255, 0.7);
 }
 
 .banner-conteudo p {
   font-size: 24px;
   line-height: 1.4;
-  color: rgba(255, 255, 255, 0.9);
+  color: rgba(255, 255, 255, 0.6);
 }
 
 .duvida {
@@ -506,6 +596,33 @@ section{
   margin: 10px auto 0;
 }
 
+.cliente-logo {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+  opacity: 0.85;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  border: 2px solid #ccc;
+}
+
+.cliente-logo:hover {
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: rgba(0, 0, 0, 0.5); 
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+}
+
+.carousel-item {
+  padding: 30px 0; /* Espaço vertical para não cortar quando crescer */
+}
+
 .nosso-endereco #map {
   width: 100%;
   height: 400px; 
@@ -520,25 +637,38 @@ section{
 }
 
 .social {
-  background-color: black;
+  background-color: #0b0d1c;
+  color: white;
   padding: 40px 20px;
-  text-align: center;
 }
 
 .social-container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 20px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.social-info, .social-contact {
+  flex: 1;
+  min-width: 280px;
 }
 
 .social-logo {
   width: 120px;
+  margin-bottom: 15px;
+}
+
+.social-description {
+  margin-bottom: 20px;
+  line-height: 1.5;
 }
 
 .social-icons {
   display: flex;
-  gap: 60px;
+  gap: 20px;
 }
 
 .social-icons a {
@@ -549,7 +679,39 @@ section{
 
 .social-icons a:hover {
   transform: scale(1.2);
-  color: white;
+  color: #00aaff;
+}
+
+.social-contact p {
+  margin: 8px 0;
+  display: flex;
+  align-items: center;
+}
+
+.social-contact i {
+  margin-right: 8px;
+  color: #00aaff;
+}
+
+.social-contact a {
+  color: #00aaff;
+  text-decoration: none;
+}
+
+.social-contact a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .social-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .social-contact p {
+    justify-content: center;
+    text-align: right;    
+  }
 }
 
 .footer {

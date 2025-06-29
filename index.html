@@ -44,13 +44,15 @@
             <h2>Soluções pensadas especialmente para sua empresa</h2>
             <p>Conheça todas as vantagens que as ferramentas Platinium trazem para seu negócio,
              com grande poder de gerenciamento, falicidade e agilidade que você precisa.</p>
-            <a href="#" class="btn-custom">Ligamos para você!</a>
-        </div>
+            <a href="#" class="btn-custom">
+              <i class="fas fa-phone-alt"></i> Ligamos para você!
+            </a>
+          </div>
     </section>
 
     <section class="produtos py-5 bg-light text-center">
   <div class="container produtos-titulo mb-4">
-    <h2>Produtos 3TI</h2>
+    <h2 class="depoimentos-titulo">Produtos 3TI</h2>
     <p>Conheça as soluções desenvolvidas para otimizar o seu negócio.</p>
   </div>
 
@@ -107,6 +109,57 @@
   </div>
 </section>
 
+<section class="segmentos-3ti">
+  <div class="barra-topo">
+    <span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+  </div>
+  <h2>Segmentos</h2>
+  <div class="barra-abaixo-titulo"></div>
+  
+  <div class="cards-segmentos">
+    <div class="card">
+      <div class="icone">&#127860;</div>
+      <h3>Restaurante</h3>
+      <p>Nulla lacinia porta neque, sit amet pharetra erat sagittis leo ac maximus.</p>
+    </div>
+    <div class="card">
+      <div class="icone">&#128717;</div>
+      <h3>Varejo</h3>
+      <p>Solução completa com PDV</p>
+    </div>
+    <div class="card">
+      <div class="icone">&#127979;</div>
+      <h3>Industria</h3>
+      <p>Controle de materiais, Receitas e conversão de medidas.</p>
+    </div>
+    <div class="card">
+      <div class="icone">&#128570;</div>
+      <h3>PetShop</h3>
+      <p>Nulla lacinia porta neque, sit amet pharetra erat sagittis leo ac maximus.</p>
+    </div>
+    <div class="card">
+      <div class="icone">&#129521;</div>
+      <h3>Materiais de Construção</h3>
+      <p>Nulla lacinia porta neque, sit amet</p>
+    </div>
+    <div class="card">
+      <div class="icone">&#128717;</div>
+      <h3>Atacado</h3>
+      <p>Soluções de pedidos em Grandes</p>
+    </div>
+    <div class="card">
+      <div class="icone">&#128666;</div>
+      <h3>Mêcanica</h3>
+      <p>Agendamento, orçamento , serviços e</p>
+    </div>
+    <div class="card">
+      <div class="icone">&#127838;</div>
+      <h3>Panificadoras</h3>
+      <p>Nulla lacinia porta neque, sit amet</p>
+    </div>
+  </div>
+</section>
+
   <section class="banner-parallax">
     <div class="rellax" data-rellax-speed="-2">
       <img src="img/empresa.jpg" alt="Banner Parallax" class="parallax-img">
@@ -136,18 +189,44 @@
         </div>        
      </section>
 
-      <section class="clientes">
-      <div class="clientes-container">
-        <h2 class="depoimentos-titulo">Clientes</h2>
-        <div class="logos-clientes">
-          <img src="img/AGP.jpg" alt="Logo AGP">
-          <img src="img/Brilhoso.jpg" alt="Logo Brilhoso">
-          <img src="img/Marcelinho.jpg" alt="Logo Marcelinho">
-          <img src="img/Taise.png" alt="Logo Taise">
-          <img src="img/Tayrona.jpg" alt="Logo Tayrona">
+     <section class="clientes py-5 bg-white text-center">
+  <div class="container">
+    <h2 class="depoimentos-titulo">Clientes</h2>
+
+    <div id="clientesCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+
+        <div class="carousel-item active">
+          <div class="d-flex justify-content-center gap-4 flex-wrap">
+            <img src="img/AGP.jpg" alt="Logo AGP" class="cliente-logo">
+            <img src="img/Brilhoso.jpg" alt="Logo Brilhoso" class="cliente-logo">
+          </div>
         </div>
+
+        <div class="carousel-item">
+          <div class="d-flex justify-content-center gap-4 flex-wrap">
+            <img src="img/Marcelinho.jpg" alt="Logo Marcelinho" class="cliente-logo">
+            <img src="img/Taise.png" alt="Logo Taise" class="cliente-logo">
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <div class="d-flex justify-content-center gap-4 flex-wrap">
+            <img src="img/Tayrona.jpg" alt="Logo Tayrona" class="cliente-logo">
+          </div>
+        </div>
+
       </div>
-    </section>
+
+      <button class="carousel-control-prev" type="button" data-bs-target="#clientesCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#clientesCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
+  </div>
+</section>
 
      <section class="depoimentos">
        <div class="depoimentos-overlay">
@@ -201,9 +280,13 @@
   </script>
  
   <section class="social">
-    <div class="social-container">
+  <div class="social-container">
+    <div class="social-info">
       <img src="img/logo.png" alt="Logo da 3TI" class="social-logo">
-
+      <p class="social-description">
+        Há mais de 17 anos no mercado de automação comercial criando soluções
+        práticas, robustas e fáceis de usar.
+      </p>
       <div class="social-icons">
         <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
         <a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
@@ -211,7 +294,17 @@
         <a href="#" aria-label="Telefone"><i class="fas fa-phone-alt"></i></a>
       </div>
     </div>
-  </section>
+
+    <div class="social-contact">
+      <p><i class="fas fa-map-marker-alt"></i> R. Voluntários da Pátria, 1185 - Centro, Araraquara</p>
+      <p><i class="fas fa-phone-alt"></i> (16) 3333-4310</p>
+      <p><i class="fas fa-phone-alt"></i> (16) 3014-6078</p>
+      <p><i class="fas fa-phone-alt"></i> (16) 3357-0971</p>
+      <p><i class="fas fa-mobile-alt"></i> (16) 99636-3464</p>
+      <p><i class="fas fa-envelope"></i> <a href="mailto:vendas@3ti.com.br">vendas@3ti.com.br</a></p>
+    </div>
+  </div>
+</section>
 
   <footer class="footer">
     <p>&copy; <span id="ano-atual"></span> <strong>3TI Softwares</strong>. Todos os direitos reservados.</p>
