@@ -62,7 +62,7 @@ header .container{
     justify-content: space-between;
     align-items: center;
     gap: 60px;
-    padding: 0 40px;
+    padding: 10px 20px;
 }
 
 .container {
@@ -190,7 +190,7 @@ section{
 }
 
 .menu-toggle {
-  display: none; 
+ display: none;
 }
 
 .produtos {
