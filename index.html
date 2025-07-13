@@ -19,9 +19,9 @@
 
             <nav>
                 <ul>                                    
-                    <li><a href="#">Central de Vendas</a></li>                    
+                    <li><a href="#" data-bs-toggle="modal" data-bs-target="#modalSolucoes">Nossas Soluções</a></li>                    
                     <li><a href="#" data-bs-toggle="modal" data-bs-target="#faleConoscoModal">Fale Conosco</a></li>
-                    <li><a href="#">Área do Cliente</a></li>
+                    <li><a href="#" data-bs-toggle="modal" data-bs-target="#areaClienteModal">Área do Cliente</a></li>
                 </ul>
             </nav>
              <a href="https://wa.me/1699663464" target="_blank" class="whatsapp-link">
@@ -44,8 +44,8 @@
             <p>Conheça todas as vantagens que as ferramentas Platinium trazem para seu negócio,
              com grande poder de gerenciamento, falicidade e agilidade que você precisa.</p>
            <button type="button" class="btn-custom" data-bs-toggle="modal" data-bs-target="#faleConoscoModal">
-           <i class="fas fa-phone-alt"></i> Ligamos para você!
-          </button>
+           Ligamos para você! <i class="fas fa-phone-alt"></i>
+           </button>
           </div>
     </section>
 
@@ -356,10 +356,18 @@
         práticas, robustas e fáceis de usar.
       </p>
       <div class="social-icons">
-        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-        <a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
-        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-        <a href="#" aria-label="Telefone"><i class="fas fa-phone-alt"></i></a>
+         <a href="https://www.instagram.com/explore/locations/366929880/3ti-softwares/recent/" target="_blank" aria-label="Instagram">
+         <i class="fab fa-instagram"></i>
+         </a>
+         <a href="https://wa.me/551699663464" target="_blank" aria-label="WhatsApp">
+         <i class="fab fa-whatsapp"></i>
+         </a>
+         <a href="https://www.facebook.com/3tiSoftwares/?locale=pt_BR" target="_blank" aria-label="Facebook">
+         <i class="fab fa-facebook-f"></i>
+         </a>
+         <a href="#" data-bs-toggle="modal" data-bs-target="#faleConoscoModal" aria-label="Telefone">
+         <i class="fas fa-phone-alt"></i>
+        </a>
       </div>
     </div>
 
@@ -426,8 +434,7 @@
             </label>
           </div>
         </form>
-      </div>
-        </form>
+       </div>        
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
@@ -437,5 +444,78 @@
   </div>
 </div>
 
-  </body>
+<div class="modal fade" id="modalSolucoes" tabindex="-1" aria-labelledby="modalSolucoesLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modalSolucoesLabel">Nossas soluções</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+      </div>
+      <div class="modal-body">
+        <div id="carouselSolucoes" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            
+            <div class="carousel-item active">
+              <img src="img/Solucao1.png" class="d-block w-100" alt="Solução 1">
+            </div>
+            <div class="carousel-item">
+              <img src="img/Solucao2.png" class="d-block w-100" alt="Solução 2">
+            </div>
+            <div class="carousel-item">
+              <img src="img/Solucao3.png" class="d-block w-100" alt="Solução 3">
+            </div>           
+            <div class="carousel-item">
+              <img src="img/Solucao4.png" class="d-block w-100" alt="Solução 4">
+            </div>          
+            <div class="carousel-item">
+              <img src="img/Solucao5.png" class="d-block w-100" alt="Solução 5">
+            </div>
+          </div>
+          
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselSolucoes" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselSolucoes" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Próxima</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="areaClienteModal" tabindex="-1" aria-labelledby="areaClienteLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+
+      <div class="modal-header">
+        <h5 class="modal-title" id="areaClienteLabel">Área do Cliente</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+      </div>
+
+      <div class="modal-body">
+        <form>
+          <div class="mb-3">
+            <label for="loginEmail" class="form-label">Login</label>
+            <input type="text" class="form-control" id="loginEmail" placeholder="Digite seu login">
+          </div>
+          <div class="mb-3">
+            <label for="loginSenha" class="form-label">Senha</label>
+            <input type="password" class="form-control" id="loginSenha" placeholder="Digite sua senha">
+          </div>
+          <div class="mb-3 text-end">
+            <a href="#" class="text-decoration-none">Esqueci minha senha</a>
+          </div>
+          <button type="submit" class="btn btn-primary w-100">Entrar</button>
+        </form>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+</body>
 </html>
